@@ -1,0 +1,554 @@
+* {
+  width: auto;
+  max-width: 100%;
+}
+
+body {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+p {
+  letter-spacing: normal;
+}
+
+/* ヘッダー */
+.header-logo {
+  width: 55%;
+  position: absolute;
+  top: 60%;
+  left: 4%;
+  transform: translateY(-50%); }
+
+/* 🍔 */
+.sp-menu {
+  display: block;
+}
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  content: "";
+  background: #666;
+  cursor: pointer;
+ }
+ #nav-open span {
+   top: 38px;
+   right: 30px;
+ }
+ #nav-open span:before {
+   bottom: -12px;
+ }
+ #nav-open span:after {
+   bottom: -24px;
+ }
+
+ .nav-invisible {
+   display: none;
+ }
+
+ #nav-contents {
+   position: absolute;
+   top: 100px;
+   z-index: 100;
+   width:100%;
+   height: auto;
+   background: black;
+   transition: .3s;
+   opacity: 0;
+ }
+
+ #nav-input:checked ~ #nav-contents {
+   opacity: .8;
+ }
+
+ .hamburger-li {
+  border-bottom: 1px solid white;
+  text-align: left;
+  padding: 17px;
+  line-height: 1.5;
+}
+
+.hamburger-li a , .hamburger-p{
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger-li a  {
+  font-size: 18px;
+}
+
+.hamburger-p {
+  font-size: 12px;
+}
+/* 🍔 */
+
+
+.full-nav {
+  display: none;
+}
+
+.header-img {
+  width: 100%;
+  height: 120px;
+  margin-top: 30px;
+}
+
+/* メイン */
+
+.content {
+  display: inline-block;
+}
+
+.main {
+  width: 100%;
+}
+
+.main-content {
+  padding-left: 15px;
+}
+
+.content {
+  margin-top: 25px;
+}
+
+h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 10px;
+  top:8px;
+  width: 3px;
+  height: 13px;
+  background-color: #8A9EEF;
+}
+.main h2 ,.main h2.program{
+  font-size: 13px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 5px;
+  padding-left: 20px;
+  width: 360px;
+  z-index: 1;
+}
+
+.m-info {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 25px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.m-date {
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  color: blue;
+  
+}
+
+.m-content {
+  font-size: 12px;
+  margin-left: 20px;
+  color: #666666;
+}
+
+.normal-m-info {
+  display: none;
+}
+
+.main ul li {
+  width: 330px;
+  font-size: 12px;
+  padding: 0;
+  margin-left: 10px;
+  /* margin-right: 20px; */
+}
+
+h3 ,.template-2{
+  font-size: 13px;
+  font-weight: normal;
+  background: linear-gradient(#FAFAFA,#F7F7F7);
+  color: #666666;
+  border: 1px solid #ccc;
+  width: 370px;
+  margin-left: 0px;
+  margin-top:5px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+.template-2 {
+  margin-top: 15px;
+}
+
+.h3-point {
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.log {
+  font-size: 12px;
+  margin-top: 25px;
+  text-align: right;
+  padding-left: 0px;
+  width: 375px;
+}
+
+.template p{
+  font-size: 12px;
+  margin-left: 10px;
+  width: 370px;
+  line-height: 1.5;
+}
+
+.company-t {
+  width: 385px;
+  margin-left: 0px;
+}
+
+.left-td-2,.right-td-2 {
+  font-size: 12px;
+}
+
+.left-td-2 {
+  width: 30%;
+  padding:10px;
+}
+
+.right-td-2 {
+  padding-left: 5px;
+  padding-top: 0px;
+}
+
+/* サービス */
+.service p{
+  font-size: 12px;
+  list-style: none;
+  color: #666666;
+  background-color: white;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  width: 350px;
+  line-height: 1.5;
+  }
+  .sample-img {
+    width: 100px;
+    height: 70px;
+    padding: 20px 10px 20px 20px;
+  }
+  
+  .service-table {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border:1px solid #D2D2D2 ;
+    background: #F7F6F6;
+    width: 95%;
+    margin-left: 0px;
+    box-shadow:0.5px 0.5px 4px gray;
+  }
+  .service-right-td {
+    text-align: left;
+    width: 65%;
+    border-bottom: 1px solid #D2D2D2;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 0px;
+    vertical-align:top;
+    line-height: 2;
+    color: #666666;
+  }
+
+  .blue-title {
+    color: blue;
+    font-size: 14px;
+  }
+  
+  .gray-p {
+    font-size: 12px;
+    position: relative;
+    top: -5px;
+  }
+  
+
+  .float-sample-img {
+    width: 100px;
+    height: 70px;
+    padding: 20px 10px 0px 20px;
+    float: left;
+  }
+  
+  .float-box {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border:1px solid #D2D2D2 ;
+  background: #F7F6F6;
+  width: 95%;
+  margin-left: 0px;
+  box-shadow:0.5px 0.5px 4px gray;
+  position: relative;
+  }
+
+  .arrow {
+    margin-left: 110px;
+    background: #666666;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 3px;
+    position: relative;
+    top: 10px;
+  }
+
+  .arrow-2 {
+    position: absolute;
+    margin-left: 200px;
+    background: #666666;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+  }
+
+  .arrow-3 {
+    margin-left: 220px;
+    background: #666666;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 3px;
+    position: relative;
+    top: 10px;
+  }
+  
+  .float-box a {
+    text-decoration: none;
+    line-height: 2;
+    position: relative;
+    top: -20px;
+  }
+  
+  .service .blue-title-p {
+    color: blue;
+    font-size: 14px;
+    background: #F7F6F6;
+    position: absolute;
+    top: 20px;
+    left: 131px;
+    margin-left: 0px;
+    padding: 0px !important;
+    width: 100px;
+  }
+  
+  .service .float-p {
+    width: 350px;
+    padding-top: 50px;
+    margin-left: 20px;
+    padding-left: 0px;
+    background: #F7F6F6;
+  }
+
+  .service-right-td-3,.service-right-td-4 {
+    padding-left: 20px;
+    text-align: left;
+    width: 380px;
+    border-bottom: 1px solid #D2D2D2;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    vertical-align:top;
+    line-height: 2;
+    color: #666666;
+  }
+  /* 採用情報 */
+  .recruit-t {
+    width: 383px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+
+  .recruit-t-title {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .recruit-t-left,.recruit-t-right{
+    color:gray;
+    border:0.5px solid #CECECE;
+    font-size: 12px;
+    vertical-align: middle;
+  }
+
+  .recruit-t-left {
+    width: 33%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+  }
+
+  .recruit-t-right {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  /* リンク */
+  .link-h2 {
+    margin-bottom: 10px !important;
+  }
+  .link-p {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  /* お問い合わせ */
+  .contact p {
+    font-size: 12px;
+    margin-left: 10px;
+    width: 330px;
+    line-height: 1.5;
+  }
+  .contact-t {
+    width: 383px;
+    margin-left: 0px;
+  }
+
+  .contact-t-left {
+    width: 40% !important;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .contact-t-left-comment {
+    font-size: 12px;
+  }
+
+  .contact-t-right-comment {
+    padding-left: 8px;
+    padding-right: 5px;
+  }
+  .contact-t-right {
+    padding-left: 5px;
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .contact-name,.contact-mail,.contact-comment {
+    width: 225px;
+    padding-bottom: 5px;
+  }
+
+  .contact-button {
+    margin-left: 0px;
+  }
+/* サイド */
+.side-content {
+  margin-top:30px ;
+  width: 390px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+.big-menu {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border:1px solid #D2D2D2 ;
+  background: #F7F6F6;
+  margin-bottom: 20px;
+}
+
+.product-info {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  height: 240px;
+  border:1px solid #D2D2D2 ;
+  background: #F7F6F6;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.menu {
+  color: #666666;
+  background: #EEEEEE;
+  border-top: 6px solid blue;
+  border-bottom: 1px solid #D2D2D2;
+  padding: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+.side-content li {
+  list-style: none;
+  }
+
+.side-content li a {
+  list-style: none;
+  color: #666666;
+  padding: 13px 9px 9px;
+  font-size: 12px;
+}
+
+.menu-small-side {
+  font-size: 12px;
+  color: #666666;
+  background: #EEEEEE;
+  border-top: 6px solid blue;
+  border-bottom: 1px solid #D2D2D2;
+  padding: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+/* 製品情報 */
+.product-info {
+  margin-top: 20px;
+}
+
+.product-img {
+  width: 70px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.left-td {
+  border-bottom: 1px solid #D2D2D2;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.right-td {
+  font-size: 11px;
+  border-bottom: 1px solid #D2D2D2;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-left: 5px;
+  width: 260px;
+  text-align: left;
+  vertical-align:top;
+  line-height: 1.2;
+  color: #666666;
+}
+
+.small-menu2.product-img {
+  width: 40px;
+}
+
+.small-menu2.right-td {
+  width: 270px;
+}
